@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorChartBackground">#9DC3C0</color>
+    <color name="colorBack">#ffffff</color>
+    <color name="colorToolBarBack">#FFFFFF</color>
+    <color name="colorCircle">#A2A0A8</color>
+    <color name="colorChartBack">#464F64</color>
+    <color name="circleGreen">#54D8C6</color>
+    <color name="circlePurple">#cd85fc</color>
+    <color name="circleYello">#ffd130</color>
+    <color name="speedBack"> #211835</color>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorChartBack"
+    tools:context=".NetSentSpeedActivity"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+       <com.github.mikephil.charting.charts.LineChart
+           android:layout_width="match_parent"
+           android:layout_height="400dp"
+           android:id="@+id/speed_sent_chart"
+           ></com.github.mikephil.charting.charts.LineChart>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+
+                android:text="当前的网速:                               100M/s"
+            />
+            <TextView
+                android:layout_marginLeft="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:text="峰值网速:                                 800M/s"
+                />
+            <TextView
+                android:layout_marginLeft="60dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:text="下载总量:                                  100G"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

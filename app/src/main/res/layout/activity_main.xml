@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBack"
+    tools:context="com.example.tangerine.demo.MainActivity">
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="250dp"
+       android:maxHeight="400dp"
+       android:scaleType="centerCrop"
+       android:adjustViewBounds="true"
+       android:src="@color/circlePurple"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:id="@+id/tool_bar"
+            ></android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:id="@+id/sever_name"
+                android:text="Tangerine"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="130dp"
+                android:textSize="20dp"
+                android:gravity="center"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                >
+
+                <com.example.tangerine.demo.CustomPieChart
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/circle_one"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+                <com.example.tangerine.demo.CustomPieChart
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/circle_two"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/circle_one" />
+                <com.example.tangerine.demo.CustomPieChart
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/circle_three"
+                    android:layout_gravity="right"
+                    android:layout_alignTop="@+id/circle_two"
+                    android:layout_toEndOf="@+id/circle_one" />
+
+            </RelativeLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="当前接受流量"
+                android:id="@+id/tv_one"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="当前发送流量"
+                android:id="@+id/tv_two"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="当前发送的数据包数量"
+                android:id="@+id/tv_three"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="当前接收的数据包数量"
+                android:id="@+id/tv_four"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

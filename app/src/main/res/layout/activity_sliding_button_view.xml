@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="1dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_height="match_parent"
+            android:layout_width="80dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/layout_content"
+            android:text="分 享"
+            android:background="@drawable/btn_click_red_havebackground"
+            android:textColor="#DDFFFFFF"
+            />
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/head_img"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/projectcard_title_text"
+                    android:layout_height="30dp"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:textColor="#DD000000"
+                    android:background="@drawable/btn_click_black_havebackground"
+                    />
+                <TextView
+                    android:id="@+id/projectcard_profile_text"
+                    android:layout_height="25dp"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:textColor="#DD000000"
+                    android:background="@drawable/btn_click_black_havebackground"
+                    />
+                <TextView
+                    android:id="@+id/projectcard_author_text"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textSize="25dp"
+                    android:textColor="#DD000000"
+                    android:background="@drawable/btn_click_black_havebackground"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
